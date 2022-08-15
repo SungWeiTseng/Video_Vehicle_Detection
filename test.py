@@ -142,7 +142,7 @@ class App(QApplication):
         self.mediaPlayer.durationChanged.connect(self.update_duration)
         self.mediaPlayer.positionChanged.connect(self.update_slider_position)
 
-        local = QUrl.fromLocalFile('C:/Users/Admin/Desktop/MVL/projcet/reid/AIC21_Track3_MTMC_Tracking/train/S01/c001/vdo.avi')
+        local = QUrl.fromLocalFile('E:/影片/序列爭戰/刀劍神域劇場版－序列爭戰 Sword Art Online.mp4')
         media = QMediaContent(local)
         self.mediaPlayer.setMedia(media)
         self.mediaPlayer.play()
@@ -151,7 +151,8 @@ class App(QApplication):
 
     def process_frame(self, image):
         # Save image here
-        image.save('c:/temp/{}.jpg'.format(str(uuid.uuid4())))
+        ...
+        # image.save('c:/temp/{}.jpg'.format(str(uuid.uuid4())))
 
     def update_duration(self):
         pass
