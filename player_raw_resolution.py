@@ -1,9 +1,7 @@
 import sys
 
-from PyQt5.QtCore import Qt, QRect
+from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QPalette, QImage, QPixmap
-from PyQt5.QtMultimedia import QMediaPlayer, QVideoSurfaceFormat, QVideoFrame
-from PyQt5.QtMultimediaWidgets import QVideoWidget
 from PyQt5.QtWidgets import QWidget, QApplication, QLabel, QPushButton, QStyle, QSlider, QHBoxLayout, QVBoxLayout
 
 

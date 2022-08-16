@@ -1,3 +1,5 @@
+import cv2
+from PIL import Image
 from PyQt5.QtCore import QUrl, pyqtSignal
 from PyQt5.QtGui import QImage, QPixmap
 from PyQt5.QtMultimedia import QMediaContent, QMediaPlayer, QAbstractVideoSurface, QVideoFrame, QAbstractVideoBuffer
@@ -61,9 +63,9 @@ class MainUIFunction:
         # self.main_window.label.setText(f"[show_mouse_press] {event.x()}, {event.y()}, {event.button()}")
         if event.button() == 1:
             self.mousePos = (event.x(), event.y())
+            self.mainWindow.reidWindow.show()
             if self.check_BBox():
                 result = self.ReID_inference()
-                self.mainWindow.reidWindow.show()
         # print(f"[show_mouse_press] {event.x()}, {event.y()}, {event.button()}")
 
     def show_mouse_release(self, event):
