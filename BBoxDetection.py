@@ -1,0 +1,6 @@
+class VehicleDetection:
+    def __init__(self):
+        ...
+
+    def detect(self, image):
+        ...

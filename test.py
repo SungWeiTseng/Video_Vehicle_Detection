@@ -142,7 +142,7 @@ class App(QApplication):
         self.mediaPlayer.durationChanged.connect(self.update_duration)
         self.mediaPlayer.positionChanged.connect(self.update_slider_position)
 
-        local = QUrl.fromLocalFile('E:/影片/序列爭戰/刀劍神域劇場版－序列爭戰 Sword Art Online.mp4')
+        local = QUrl.fromLocalFile('')
         media = QMediaContent(local)
         self.mediaPlayer.setMedia(media)
         self.mediaPlayer.play()
